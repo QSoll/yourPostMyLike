@@ -31,6 +31,20 @@ Quando colcor o mouse sobre o link, pressione crlt para tornar o link clicável
 
 ---
 
+## Funcionalidades da planilha de postagens
+
+**Visualização em tempo real** Os novos links enviados pelo formulário aparecem automaticamente na planilha, sem precisar atualizar manualmente.
+
+**Pesquisa por nome ou palavra-chave** Use o atalho Ctrl + F (ou Cmd + F no Mac) para buscar um nome, rede social, tipo de postagem ou qualquer termo específico.
+
+**Acesso direto aos links** Todos os links enviados podem ser clicados diretamente, facilitando o apoio com curtidas, comentários e compartilhamentos.
+
+**Ordenação de colunas** Clique no cabeçalho da coluna (como "Nome" ou "Data") para ordenar alfabeticamente ou por ordem de envio.
+
+**Visual leve e adaptável** Pode ser visualizada em qualquer navegador, inclusive no celular.
+
+**Privacidade e segurança** A planilha está configurada como “somente leitura” — todos podem ver e clicar, mas ninguém consegue apagar ou alterar dad
+
 Quer melhorar ou contribuir com esta página? Sinta-se à vontade para abrir um pull request ou issue 😉
 
 ---
