@@ -1,10 +1,14 @@
-# seuPostMeuLike
+## DEV, TECH, TI
+
+## seuPostMeuLike
 
 *Central de engajamento*
 
-**Compartilhe aqui o link da sua nova postagem** e acesse os links enviados pela galera
-Vamos fortalecer o amigo com curtidas, comentários e engajamento !
-Essa é a nossa central colaborativa — Cada curtida conta muito !  
+**Compartilhe o link da sua nova postagem**
+
+* Acesse os links enviados pela galera
+* Vamos fortalecer o amigo com curtidas, comentários e engajamento !
+* Essa é a nossa central colaborativa — Cada curtida conta muito !  
 
 ---
 
