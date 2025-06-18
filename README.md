@@ -45,6 +45,8 @@ Quando colcor o mouse sobre o link, pressione crlt para tornar o link clicável
 
 **Privacidade e segurança** A planilha está configurada como “somente leitura” — todos podem ver e clicar, mas ninguém consegue apagar ou alterar dad
 
+---
+
 Quer melhorar ou contribuir com esta página? Sinta-se à vontade para abrir um pull request ou issue 😉
 
 ---
