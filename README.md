@@ -13,7 +13,7 @@
 * Vamos fortalecer o amigo com curtidas, comentários e engajamento !
 * Essa é a nossa central colaborativa — Cada curtida conta muito !  
 
-<a href="https://solmorcillo.com.br/yourpostmylike/go.html">Clique aqui para postar e para curtir<img src="https://solmorcillo.com.br/yourpostmylike/assets/img/yourpost_mylike_logo.png" width="200px" height="200px"></a>
+<a href="https://solmorcillo.com.br/yourpostmylike/go.html"><img src="https://solmorcillo.com.br/yourpostmylike/assets/img/yourpost_mylike_logo.png" width="200px" height="200px">Clique aqui para postar e para curtir</a>
 
 <br><br>
 
