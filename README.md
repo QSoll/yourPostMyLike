@@ -1,3 +1,6 @@
+
+<img src="https://solmorcillo.com.br/yourpostmylike/assets/img/yourpost_mylike_banner1.jpg">
+
 ## DEV, TECH, TI
 
 ## seuPostMeuLike
@@ -10,33 +13,32 @@
 * Vamos fortalecer o amigo com curtidas, comentários e engajamento !
 * Essa é a nossa central colaborativa — Cada curtida conta muito !  
 
----
+<a href="https://solmorcillo.com.br/yourpostmylike/go.html">Clique aqui para postar e para curtir<img src="https://solmorcillo.com.br/yourpostmylike/assets/img/yourpost_mylike_logo.png" width="200px" height="200px"></a>
 
-## FORMULÁRIO - Enviar nova postagem
-Preencha o formulário abaixo com seu nome, rede social da postagem, link e uma breve descrição:
-
-<a href="https://forms.gle/nMdsVDFs8PQKYWpB8" target="_blank" rel="noopener noreferrer">👉 Clique aqui para adicionar sua postagem</a>
-
----
-
-## Ver postagens da comunidade
-Quer ver os links que a galera já enviou? Acesse a planilha:
-
-<a href="https://docs.google.com/spreadsheets/d/1JP3NmIpwISiu7XF-HXOnGf3Z6QFX84_fPTjCl9AL6LU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">👉 Clique aqui para ver os links, acessar e curtir</a>
-
-Quando colcor o mouse sobre o link, pressione crlt para tornar o link clicável
-
----
+<br><br>
 
 ## Como funciona
 
-1. Envie sua postagem pelo formulário  
-2. A planilha será atualizada automaticamente  
-3. Acesse a planilha para curtir as postagens da comunidade 💬
 
----
+# FORMULÁRIO - Envie suas postagens
+Preencha o formulário com seu nome, rede social da postagem, link e uma breve descrição
+
+<!--<a href="https://forms.gle/nMdsVDFs8PQKYWpB8" target="_blank" rel="noopener noreferrer">👉 Clique aqui para adicionar sua postagem</a>-->
+
+<br><br>
+
+# Ver postagens da comunidade
+Quer ver os links que a galera já enviou?
+Acesse a planilha e curta fortalecendo as postagens da comunidade 💬
+
+<!--<a href="https://docs.google.com/spreadsheets/d/1JP3NmIpwISiu7XF-HXOnGf3Z6QFX84_fPTjCl9AL6LU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">👉 Clique aqui para ver os links, acessar e curtir</a>-->
+Quando colocar o mouse sobre o link, pressione crlt para tornar o link clicável 
+
+<br><br>
 
 ## Funcionalidades da planilha de postagens
+
+**Atualizada automática**
 
 **Visualização em tempo real** Os novos links enviados pelo formulário aparecem automaticamente na planilha, sem precisar atualizar manualmente.
 
@@ -56,7 +58,9 @@ Quer melhorar ou contribuir com esta página? Sinta-se à vontade para abrir um 
 
 ---
 
-*Feito com carinho e colaboração*
+*Feito com carinho e colaboração, para engajamento e conexão !!!*
 
-Sol Morcillo
+<br>
+
+<img src="https://solmorcillo.com.br/imgs_public/logo_SM.jpg" width="100px" height="150px">
 
