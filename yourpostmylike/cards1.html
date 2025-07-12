@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yourPost myLike</title>
+    <!-- Tailwind CSS para estilização -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- PapaParse para processar dados CSV do Google Sheets -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Fonte personalizada */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilo para o indicador de carregamento */
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Posts da Comunidade</h1>
+        </header>
+
+        <!-- Contêiner para os cards -->
+        <div id="cards-container" class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+            <!-- Indicador de carregamento -->
+            <div id="loading" class="col-span-full flex flex-col items-center justify-center h-64">
+                <div class="loader mb-4"></div>
+                <p class="text-gray-600">Buscando dados da Planilha Google...</p>
+            </div>
+            <!-- Placeholder para mensagem de erro -->
+            <div id="error-message" class="col-span-full hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg" role="alert"></div>
+        </div>
+    </div>
+
+    <script>
+        // --- IMPORTANTE ---
+
+
+        // COLE A URL DO SEU CSV DO GOOGLE SHEET AQUI
+        // A URL anterior estava causando um erro. Substituí por um exemplo funcional.
+        // Por favor, garanta que sua planilha está corretamente "Publicada na web" como um arquivo CSV.
+        const googleSheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTlFCEIllp0Gz_RpHl1R7rWWk6qCnb9gk5_VH_rNVZPRN03m__NN2JmVRa1UsGdKpf98cVns9_WGOAs/pub?gid=56115871&single=true&output=csv'; // Substitua pela URL do seu CSV publicado
+
+        // Elementos do DOM
+        const cardsContainer = document.getElementById('cards-container');
+        const loadingIndicator = document.getElementById('loading');
+        const errorMessageContainer = document.getElementById('error-message');
+
+        // Função para criar um link com um ícone
+        function createSocialLink(url, iconClass, platformName) {
+            if (!url || url.trim() === '') return '';
+            return `
+                <a href="${url}" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-300">
+                    <i class="${iconClass}"></i>
+                    <span>${platformName}</span>
+                </a>`;
+        }
+
+        // Função para criar um item de informação genérico
+        function createInfoItem(label, value, iconClass) {
+            if (!value || value.trim() === '') return '';
+            return `
+                <div class="flex items-start space-x-2 text-gray-700">
+                    <i class="${iconClass} mt-1 text-gray-500"></i>
+                    <span><strong>${label}:</strong> ${value}</span>
+                </div>`;
+        }
+
+        // Buscar e processar os dados CSV
+        document.addEventListener('DOMContentLoaded', () => {
+            Papa.parse(googleSheetUrl, {
+                download: true,
+                header: true,
+                skipEmptyLines: true,
+                complete: function(results) {
+                    loadingIndicator.style.display = 'none'; // Oculta o indicador de carregamento
+                    const data = results.data;
+
+                    if (!data || data.length === 0) {
+                        errorMessageContainer.textContent = 'Nenhum dado encontrado na planilha ou a URL está incorreta.';
+                        errorMessageContainer.classList.remove('hidden');
+                        return;
+                    }
+
+                    // Mapeia os cabeçalhos em português para chaves mais simples para facilitar o acesso
+                    const extrairDataHora = (texto) => {
+  if (!texto) return '';
+  const partes = texto.split(' ');
+  if (partes.length >= 2) {
+    const data = partes[0]; // ex: 06/07/2025
+    const hora = partes[1].slice(0, 5); // ex: 20:58 (sem os segundos)
+    return `${data} ${hora}`;
+  }
+  return texto;
+};
+
+                    const mappedData = data.map(row => ({
+                        
+                rawTimestamp: row['Carimbo de data/hora'], // usado para ordenar
+                timestamp: extrairDataHora(row['Carimbo de data/hora']), // usado para exibir
+                name: row['Qual o seu nome?'],
+                title: row['Título do post'],
+                linkedin: row['Linkedin - Colar link'],
+                dio: row['Dio - Colar link'],
+                instagram: row['Instagram - Colar link'],
+                otherPlaceName: row['Outro lugar ? Qual ?'],
+                otherPlaceLink: row['Outro lugar - Colar link'],
+                instagramViews: row['instagram-visualizaçãoseu'],
+                myLikePost: row['Post meuLike']
+                }));
+
+                mappedData.sort((a, b) => new Date(b.rawTimestamp) - new Date(a.rawTimestamp));
+
+                mappedData.forEach(row => {
+                    const card = document.createElement('div');
+                 
+                        card.className = 'bg-white rounded-md shadow-md overflow-hidden p-3 text-sm w-full max-w-md mx-auto transform hover:-translate-y-1 hover:scale-105 transition-transform duration-300';
+
+                        /*card.className = 'bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300'*/
+
+                        // Conteúdo do card
+                        card.innerHTML = `
+                            <div class="p-6 ">
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">${row.title || 'Sem Título'}</h3>
+                                <div class="flex items-center text-gray-600 mb-4">
+                                    <i class="fas fa-user-circle mr-2 text-gray-500"></i>
+                                    <p class="font-semibold">${row.name || 'Anônimo'}</p>
+                                </div>
+                                
+                                <div class="space-y-3">
+                                    <div class="flex justify-center items-center gap-4 flex-wrap mt-4">
+                                    ${createSocialLink(row.linkedin, 'fab fa-linkedin', 'LinkedIn')}
+                                    ${createSocialLink(row.dio, 'fas fa-link', 'Dio')}
+                                    </div>
+
+                                    ${row.otherPlaceName && row.otherPlaceLink ? createSocialLink(row.otherPlaceLink, 'fas fa-external-link-alt', row.otherPlaceName) : ''}
+                                </div>
+                                <hr class="my-4 border-gray-200">
+                                <div class="space-y-2 text-sm  ">
+                                    <div class="text-gray-700 text-sm  text-center w-full" >${row.timestamp}</div>
+
+                                    ${createInfoItem('Visualizações Instagram', row.instagramViews, 'fas fa-eye')}
+                                    ${createInfoItem('Curtido por mim', row.myLikePost, 'fas fa-heart text-pink-500')}
+                                </div>
+                            </div>
+                        `;
+                        cardsContainer.appendChild(card);
+                    });
+                },
+                error: function(err, file) {
+                    loadingIndicator.style.display = 'none'; // Oculta o indicador de carregamento
+                    errorMessageContainer.textContent = 'Erro ao buscar ou processar a planilha do Google. Verifique a URL e garanta que ela foi publicada corretamente como CSV.';
+                    errorMessageContainer.classList.remove('hidden');
+                    console.error('Erro do PapaParse:', err, file);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

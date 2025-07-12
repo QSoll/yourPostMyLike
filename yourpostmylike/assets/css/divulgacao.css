@@ -1,0 +1,113 @@
+
+/**{
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+  box-sizing: initial;
+}*/
+  body { 
+  text-decoration: none;
+  color:black;
+  font-size: 1.1em;
+  line-height: 35px;
+  font-family: Arial, Helvetica, sans-serif; 
+  background: white;
+  padding:0px;
+  margin:0px; 
+}
+
+.banner-larg-total{
+  width: 100%;
+  height: auto;
+  padding:0px;
+}
+
+#tudo{
+  width: 100%;
+  padding:0px; /*não mudar*/
+  margin: 0px;
+}
+#cx-total-color{
+  padding: 10px;
+  margin:0px;
+  text-align: center;
+  line-height: 60px;
+}
+.texto-total-color
+{
+  width:90%;
+  padding:5px;
+  margin: 0 auto; /*alinha div horizontalmente no centro*/
+  background-color: rgb(247, 242, 171);
+  border-radius: 40px;
+}
+.texto-total{
+  width:90%;
+  padding:2%;
+  margin: 0 auto; /*alinha div horizontalmente no centro*/
+  text-align: center;
+}
+
+.cx-text-total-esq{
+  text-align: left;
+  text-align: justify;
+}
+h1 { color: #333; }
+
+.block{
+  display: block;
+  width: 90%;
+  padding: 3%;
+}
+.cx-button{
+  display: inline-block;
+  }
+.planilha{
+  padding:3%;
+}
+.planilha{
+  width:90%;
+  height: auto;
+  text-align: center;
+  padding:3%;
+}
+.button{
+  background-color: chartreuse;
+  border: 1px solid chartreuse;
+  border-radius: 30px;
+  padding: 15px;
+  font-size: medium;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
+  justify-content: center;
+   text-decoration: none;
+   color:black;
+}
+
+#footer-geral {
+  width: 100%;
+  background-color: rgb(203, 232, 178);
+  margin-bottom: 0;
+  text-align: center;
+}
+#foot{
+  padding: 3%;
+}
+.footer-geral p {
+  padding:0px;
+  line-height: 30px;
+}
+.copy-rodape {
+font-size: smaller;
+color: rgb(118, 144, 95);
+}
+.link-logo-github{
+
+}
+.link-logo-github:hover{
+  border: 1px solid transparent;
+  padding:5px;
+  border-radius: 50px;
+  background-color: cadetblue;
+}

@@ -1,0 +1,124 @@
+
+                    <div style="margin-bottom: 12px;">
+                        <label style="display: block; margin-bottom: 4px; color: #333; font-weight: 500; font-size: 0.9em;">Instagram - Colar link</label>
+                        <input type="url" name="instagramLink" placeholder="https://instagram.com/p/..." style="width: 100%; padding: 8px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 14px;">
+                    </div>
+
+
+
+                    <div class="buttons" style="margin-top: 15px;">
+                        <button type="button" class="btn btn-secondary" onclick="goBackToMain()">Voltar</button>
+                        <button type="button" class="btn btn-primary" onclick="submitPost()">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <!--Contribuição Roni Carvalho-->
+            <p>Desenvolvido com ❤️ usando Electron + TypeScript | Versão <span id="version">1.0.0</span></p>
+        </footer>
+    </div>
+
+    <script>
+        // Verificar se a API do Electron está disponível
+        if (window.electronAPI) {
+            // Carregar versão do app
+            window.electronAPI.getAppVersion().then(version => {
+                document.getElementById('version').textContent = version;
+            }).catch(() => {
+                document.getElementById('version').textContent = '1.0.0';
+            });
+        }
+
+        function minimizeToTray() {
+            if (window.electronAPI) {
+                window.electronAPI.minimizeToTray();
+                showStatus('Aplicativo minimizado para a bandeja do sistema!');
+            } else {
+                showStatus('Funcionalidade disponível apenas no Electron');
+            }
+        }
+
+        function showNotification() {
+            // Navegar para a página de notificações
+            window.location.href = 'notifications.html';
+        }
+
+        function showAppInfo() {
+            const platform = window.electronAPI ? window.electronAPI.platform : 'browser';
+            const info = `
+                Plataforma: ${platform}
+                Tecnologias: Electron + TypeScript + Node.js
+                Recursos: Systray, Notificações, Multiplataforma
+            `;
+            showStatus(info);
+        }
+
+        function showStatus(message) {
+            const statusDiv = document.getElementById('status');
+            statusDiv.textContent = message;
+            statusDiv.style.display = 'block';
+            
+            setTimeout(() => {
+                statusDiv.style.display = 'none';
+            }, 3000);
+        }
+
+        function minimizeWindow() {
+            if (window.electronAPI) {
+                window.electronAPI.minimizeToTray();
+                showStatus('Aplicativo minimizado para a bandeja do sistema!');
+            }
+        }
+
+        function closeWindow() {
+            if (window.electronAPI) {
+                window.electronAPI.closeApp();
+            }
+        }
+
+        function showPostDialog() {
+            document.getElementById('mainCard').style.display = 'none';
+            document.getElementById('postForm').style.display = 'block';
+        }
+
+        function goBackToMain() {
+            document.getElementById('postForm').style.display = 'none';
+            document.getElementById('mainCard').style.display = 'block';
+        }
+
+        function submitPost() {
+            const form = document.getElementById('postFormData');
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+            
+            // Validar campos obrigatórios
+            if (!data.name || !data.postTitle || !data.linkedinLink) {
+                showStatus('Por favor, preencha todos os campos obrigatórios!');
+                return;
+            }
+            
+            // Simular envio
+            showStatus('Postagem enviada com sucesso!');
+            form.reset();
+            
+            // Voltar para tela principal após 2 segundos
+            setTimeout(() => {
+                goBackToMain();
+            }, 2000);
+        }
+
+        // Listeners para eventos do Electron
+        if (window.electronAPI) {
+            window.electronAPI.onUpdateAvailable(() => {
+                showStatus('Nova atualização disponível!');
+            });
+
+            window.electronAPI.onUpdateDownloaded(() => {
+                showStatus('Atualização baixada! Reinicie o aplicativo para aplicar.');
+            });
+        }
+    </script>
+</body>
+</html>

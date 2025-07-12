@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="290"
+   height="440"
+   viewBox="0 0 76.729165 116.41666"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="photo-fundo-verde_modelo.svg"
+   inkscape:export-filename="..\img\photo-fundo-verde-SolMorcillo.jpg"
+   inkscape:export-xdpi="18.142857"
+   inkscape:export-ydpi="18.142857"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.4031746"
+     inkscape:cx="257.95276"
+     inkscape:cy="381.9685"
+     inkscape:window-width="1024"
+     inkscape:window-height="701"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <radialGradient
+       xlink:href="#linearGradient48"
+       id="radialGradient50-3-6-0"
+       cx="18.258856"
+       cy="124.90146"
+       fx="18.258856"
+       fy="124.90146"
+       r="11.008853"
+       gradientTransform="matrix(0.3330563,0,0,0.34027072,209.79161,-31.712378)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       id="linearGradient48">
+      <stop
+         style="stop-color:#faff0d;stop-opacity:1;"
+         offset="0.36842108"
+         id="stop49" />
+      <stop
+         style="stop-color:#ffff3c;stop-opacity:0.00359712;"
+         offset="1"
+         id="stop50" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2">
+      <rect
+         style="fill:#ff00ff;fill-opacity:1;fill-rule:evenodd;stroke-width:2.258;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+         id="rect3"
+         width="114.1875"
+         height="163.40627"
+         x="6.562499"
+         y="3.281249" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect1"
+       style="fill:#cbe8b2;fill-opacity:1;fill-rule:evenodd;stroke-width:2.25801;stroke-linecap:round;stroke-linejoin:round;paint-order:fill markers stroke"
+       inkscape:label="retangulo"
+       d="M 0,0 V 116.41666 H 76.729165 V 0 Z M 38.028434,5.0615803 A 34.337323,43.867187 0 0 1 72.365886,48.928826 34.337323,43.867187 0 0 1 38.028434,92.796076 34.337323,43.867187 0 0 1 3.6909824,48.928826 34.337323,43.867187 0 0 1 38.028434,5.0615803 Z" />
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#cbe8b2;stroke-width:2.258;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:fill markers stroke"
+       d="m 3.6093749,86.296871 c 0,0 6.8906251,26.578119 33.4687491,26.578119 26.578123,0 36.421873,-26.906244 36.421873,-26.906244"
+       id="path3"
+       sodipodi:nodetypes="csc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.3799px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.258;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:fill markers stroke"
+       id="text3"
+       transform="translate(0.32812495,-5.2499998)"><textPath
+         xlink:href="#path3"
+         startOffset="50%"
+         id="textPath3"><tspan
+           id="tspan3"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.3799px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:2.258">Seu nome</tspan></textPath></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.5176px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.258;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:fill markers stroke"
+       x="38.545074"
+       y="-36.67482"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="stroke-width:2.258"
+         x="38.545078"
+         y="-36.67482">Posicione sua foto atrás da moldura</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:2.258"
+         x="38.545074"
+         y="-19.777821"
+         id="tspan5">E coloque seu nome</tspan></text>
+  </g>
+</svg>
