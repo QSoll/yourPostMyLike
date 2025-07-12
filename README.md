@@ -1,19 +1,29 @@
 
-<img src="https://solmorcillo.com.br/yourpostmylike/assets/img/yourpost_mylike_banner1.jpg">
+<a href="https://solmorcillo.com.br/yourpostmylike/go.html"><img src="https://solmorcillo.com.br/yourpostmylike/assets/img/yourpost_mylike_banner1.jpg" ></a>  
+### DEV, TECH, TI
+## YourPost MyLike
 
-## DEV, TECH, TI
+*Central de CONEXÃO E ENGAJAMENTO* "WebLab para devnautas"
+* Um lugar para nós devs fazermos parte de uma constelação de estrelinhas e curtidas
+* Contribua e aplique seus conhecimentos para melhorar nosso espaço colaborativo
 
-## seuPost MeuLike
 
-*Central de engajamento*
+## Entre para o grupo no Telegram: t.me/yourpostmylike 
 
-**Compartilhe o link da sua nova postagem**
+<a href="https://solmorcillo.com.br/yourpostmylike/go.html"><img src="https://solmorcillo.com.br/yourpostmylike/assets/img/yourpost_mylike_logo.png" width="80px" height="80px">Acesse o site para suaPostagem.Add e para curtir postagens</a>
 
-* Acesse os links enviados pela galera
-* Vamos fortalecer o amigo com curtidas, comentários e engajamento !
-* Essa é a nossa central colaborativa — Cada curtida conta muito !  
 
-<a href="https://solmorcillo.com.br/yourpostmylike/go.html"><img src="https://solmorcillo.com.br/yourpostmylike/assets/img/yourpost_mylike_logo.png" width="200px" height="200px">Clique aqui para postar e para curtir</a>
+**Compartilhando sua nova postagem**
+* Você pode acessar o site pelo link acima ou pelo Telegram
+* Adicione e salve o link das suas postagens no formulário
+* O Telegram notifica que uma nova postagem foi adicionada
+
+* **Curtindo postagens** 
+* O grupo no telegram notifica nova postagem = dedique um minutinho para acessar e curtir
+* Essa é a nossa central colaborativa — Cada curtida conta muito !!!
+* Fortaleça a comunidade = Contribua para que postnautas tenham muitas curtidas e engajamento !!!
+ 
+<a href="https://solmorcillo.com.br/yourpostmylike/go.html"><img src="https://solmorcillo.com.br/yourpostmylike/assets/img/yourpost_mylike_logo.png" width="80px" height="80px">Acesse o site para suaPostagem.Add e para curtir postagens</a>
 
 <br><br>
 
@@ -21,7 +31,7 @@
 
 
 # FORMULÁRIO - Envie suas postagens
-Preencha o formulário com seu nome, rede social da postagem, link e uma breve descrição
+Acesse o formulário e preencha com seu nome, rede social da postagem, link e uma breve descrição
 
 <!--<a href="https://forms.gle/nMdsVDFs8PQKYWpB8" target="_blank" rel="noopener noreferrer">👉 Clique aqui para adicionar sua postagem</a>-->
 
