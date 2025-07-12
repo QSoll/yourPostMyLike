@@ -23,7 +23,7 @@
 * Essa é a nossa central colaborativa — Cada curtida conta muito !!!
 * Fortaleça a comunidade = Contribua para que postnautas tenham muitas curtidas e engajamento !!!
  
-<a href="https://solmorcillo.com.br/yourpostmylike/go.html"><img src="https://solmorcillo.com.br/yourpostmylike/assets/img/yourpost_mylike_logo.png" width="80px" height="80px">Acesse o site para suaPostagem.Add e para curtir postagens</a>
+<a href="https://solmorcillo.com.br/yourpostmylike/go.html"><img src="https://solmorcillo.com.br/yourpostmylike/assets/img/yourpost_mylike_logo.png" width="80px" height="80px">Acesse o site para Postagem.Add e para curtir postagens</a>
 
 <br><br>
 
